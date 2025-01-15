@@ -20,7 +20,7 @@ export default function Cursor() {
     }, [])
     return (
         <div
-        className="fixed w-[50px] opacity-10 blur-lg h-[50px] rounded-full bg-yellow-500" 
+        className="fixed z-[-1] w-[50px] opacity-10 blur-lg h-[50px] rounded-full bg-yellow-500" 
         style={{
             "top": `${mouse.y - 12}px`,
             "left": `${mouse.x -20}px`

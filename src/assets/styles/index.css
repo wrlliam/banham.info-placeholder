@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SFPro";
+  src: url("assets/SF-Pro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFPro";
+  src: url("assets/SF-Pro-Display-Black.otf") format("opentype");
+  font-weight: 700;
+}
+
+:root {
+  --bg-neutral-900: rgb(17, 24, 39);
+}
+
+* {
+  font-family: "SFPro", sans-serif;
+}
+
+body {
+  @apply bg-neutral-950 text-white;
+}
+
+::selection {
+  @apply bg-yellow-400/20;
+}
+
+.smooth_transition {
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.uline a {
+  @apply underline text-blue-500 hover:text-blue-400 cursor-pointer;
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
